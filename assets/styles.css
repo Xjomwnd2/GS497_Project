@@ -114,6 +114,21 @@ button:disabled {
     grid-column: span 2; /* Make button span across two columns */
   }
 }
+/*///////////////Project Card//////////////////////*/
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.project-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+/*/////////////////////////////////////*/
 /* General Styles for Footer */
 footer {
   background-color: #333;   /* Dark background for the footer */
