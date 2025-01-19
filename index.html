@@ -1,81 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="assets/styles/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Joel Ndiba Mwaura | Web Developer Portfolio</title>
+  <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#reports">Weekly Reports</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Home Section -->
-    <section id="home">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Showcasing my skills, projects, and weekly progress.</p>
-    </section>
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#progress">Weekly Progress</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project-gallery">
-            <!-- Example Project -->
-            <div class="project-card">
-                <img src="assets/images/project1.jpg" alt="Project 1">
-                <h3>Project Title</h3>
-                <p>Brief description of the project goes here.</p>
-            </div>
-        </div>
-    </section>
+  <!-- Home Section (Introduction) -->
+  <section id="home">
+    <h1>Welcome to My Portfolio</h1>
+    <h2>I'm Joel Ndiba Mwaura – A Passionate Web Developer</h2>
+    <p>Hello, and welcome to my online portfolio! I'm a dedicated web developer with a passion for creating intuitive and responsive web applications. With a strong foundation in frontend technologies like HTML, CSS, and JavaScript, as well as backend development, I aim to build websites that not only look great but also perform seamlessly.</p>
+    <p><strong>Explore my projects, progress, and how we can collaborate together.</strong></p>
+  </section>
 
-    <!-- Weekly Reports Section -->
-    <section id="reports">
-        <h2>Weekly Progress Reports</h2>
-        <form id="progress-form">
-            <label for="date">Date:</label>
-            <input type="date" id="date" name="date" required>
+  <!-- Professional Background Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m currently studying Applied Technology with a focus on Web Design and Development at BYU-Idaho. My journey in web development has allowed me to hone skills in both frontend and backend technologies, including building fully functional websites and applications. With experience in version control, database management, and user-centered design, I’m always excited to learn more and take on new challenges in the tech world.</p>
 
-            <label for="time-spent">Time Spent (hours):</label>
-            <input type="number" id="time-spent" name="time-spent" required>
+    <h3>Key Skills</h3>
+    <ul>
+      <li>HTML/CSS</li>
+      <li>JavaScript</li>
+      <li>Backend Development</li>
+      <li>Database Management</li>
+      <li>Version Control (Git)</li>
+    </ul>
+  </section>
 
-            <label for="tasks-completed">Tasks Completed:</label>
-            <textarea id="tasks-completed" name="tasks-completed" rows="4" required></textarea>
+  <!-- Goals for the Portfolio Section -->
+  <section id="goals">
+    <h2>My Goals for This Portfolio</h2>
+    <p>This portfolio is a reflection of my growth and skills as a web developer. Through this platform, I want to:</p>
+    <ul>
+      <li>Showcase my completed projects and the technologies I’ve worked with.</li>
+      <li>Share my weekly progress as I continue to learn and refine my skills.</li>
+      <li>Provide an easy way for potential clients and employers to reach out.</li>
+      <li>Build a strong online presence that demonstrates my capabilities and passion for development.</li>
+    </ul>
+  </section>
 
-            <button type="submit">Add Report</button>
-        </form>
-        <div id="report-list">
-            <h3>Reports</h3>
-            <!-- Reports will be dynamically added here -->
-        </div>
-    </section>
-
-    <!-- Contact Section -->
+  <!-- Footer with Contact Link -->
+  <footer>
     <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Send</button>
-        </form>
+      <h2>Contact Me</h2>
+      <p>If you’re interested in collaborating or have any questions, feel free to reach out to me via the <a href="contact.html">contact form</a>.</p>
     </section>
+  </footer>
 
-    <script src="assets/scripts/app.js"></script>
 </body>
 </html>
