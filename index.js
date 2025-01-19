@@ -1,6 +1,7 @@
 // Import Express module
 const express = require('express');
 const path = require('path');
+const bodyParser = require('body-parser');
 
 // Initialize Express app
 const app = express();
@@ -23,14 +24,51 @@ app.post('/submit-form', (req, res) => {
   res.send('Form submitted successfully!');
 });
 //////////////////////////
-const bodyParser = require('body-parser');
+
 
 // Use body-parser middleware to parse form data
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 ///////////////////////////////////////////
 
-// Start the server
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+// Middleware to parse incoming form data
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+// Serve static files (like index.html and CSS)
+app.use(express.static('public'));
+
+// Handle progress form submission
+app.post('/submit-progress', (req, res) => {
+  const { date, timeSpent, tasksCompleted } = req.body;
+
+  console.log('Progress Report Submitted:');
+  console.log(`Date: ${date}`);
+  console.log(`Time Spent: ${timeSpent} hours`);
+  console.log(`Tasks Completed: ${tasksCompleted}`);
+  
+  // Send a response to the client
+  res.send('Progress report submitted successfully!');
 });
+
+// Handle contact form submission
+app.post('/submit-contact', (req, res) => {
+  const { name, email, message } = req.body;
+
+  console.log('Contact Form Submitted:');
+  console.log(`Name: ${name}`);
+  console.log(`Email: ${email}`);
+  console.log(`Message: ${message}`);
+  
+  // Send a response to the client
+  res.send('Thank you for reaching out! I will respond soon.');
+});
+
+// Start the server
+app.listen(port, () => {
+  console.log(`Server running on http://localhost:${port}`);
+});
+
+///////////////////////////////////////////
+
+
