@@ -10,6 +10,15 @@ body {
   height: 100vh;
 }
 
+/*///////////////////////////*/
+    #my-section {
+      background-image: url('assets/images/wireframe.webp');
+      background-size: cover; /* Ensures the image covers the entire section */
+      background-position: center; /* Centers the background image */
+      height: 500px; /* Set the height of the section */
+    }
+/*/////////////////////////*/
+
 /* Contact Section */
 #contact {
   background-color: #ffffff;
