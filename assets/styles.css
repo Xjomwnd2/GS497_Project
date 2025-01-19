@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f9f9f9;
@@ -10,14 +10,13 @@ body {
   height: 100vh;
 }
 
-/*///////////////////////////*/
-    #my-section {
-      background-image: url('images/wireframe.webp');
-      background-size: cover; /* Ensures the image covers the entire section */
-      background-position: center; /* Centers the background image */
-      height: 500px; /* Set the height of the section */
-    }
-/*/////////////////////////*/
+/* Wireframe Section */
+#my-section {
+  background-image: url('images/wireframe.webp');
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the background image */
+  height: 500px; /* Set the height of the section */
+}
 
 /* Contact Section */
 #contact {
@@ -123,7 +122,8 @@ button:disabled {
     grid-column: span 2; /* Make button span across two columns */
   }
 }
-/*///////////////Project Card//////////////////////*/
+
+/* Project Card */
 .project-card {
   display: flex;
   flex-direction: column;
@@ -133,18 +133,13 @@ button:disabled {
   margin: 10px;
   border-radius: 10px;
 }
+
 .project-card h3 {
   font-size: 1.5rem;
   color: #333;
 }
-/*//CSS/*/
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
-}
 
+/* Header */
 header {
   background: #333;
   color: white;
@@ -166,6 +161,7 @@ header nav ul li a {
   font-weight: bold;
 }
 
+/* Forms for Progress and Contact */
 #progress form, #contact form {
   display: flex;
   flex-direction: column;
@@ -191,7 +187,8 @@ button {
 button:hover {
   background-color: #0056b3;
 }
-/*///Media Queries/*/
+
+/* Media Queries */
 @media (max-width: 768px) {
   header nav ul {
     flex-direction: column;
@@ -202,8 +199,8 @@ button:hover {
     width: 90%;
   }
 }
-/*/////////////////////////////////////*/
-/* General Styles for Footer */
+
+/* Footer */
 footer {
   background-color: #333;   /* Dark background for the footer */
   color: #fff;              /* White text color */
