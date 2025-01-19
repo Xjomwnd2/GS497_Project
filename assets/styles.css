@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Contact Section */
+  #contact {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+    grid-gap: 15px;
+  }
+  
+  #contact h2 {
+    text-align: center;
+    color: #333;
+    grid-column: span 1; /* Makes the heading span across the full width */
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column by default */
+    grid-gap: 15px;
+  }
+  
+  label {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    display: block;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    grid-column: span 1; /* Ensures the button takes the full width */
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:active {
+    background-color: #00408d;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Responsive Styles (for wider screens) */
+  @media (min-width: 600px) {
+    #contact {
+      grid-template-columns: 1fr 1fr; /* Two columns on larger screens */
+    }
+  
+    form {
+      grid-template-columns: 1fr 1fr; /* Two columns for labels and inputs */
+    }
+  
+    label {
+      grid-column: span 1;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      grid-column: span 1;
+    }
+  
+    button {
+      grid-column: span 2; /* Make button span across two columns */
+    }
+  }
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: underline;
+  }  
