@@ -1,19 +1,9 @@
-const express = require('express');
-const app = express();
-const port = 3000;
-
-app.get('/', (req, res) => {
-  res.send('Hello, World!');
-});
-
-
-////////
 // Import Express module
 const express = require('express');
 const path = require('path');
 
 // Initialize Express app
-
+const app = express();
 
 // Set up the port (default is 3000)
 const PORT = process.env.PORT || 3000;
@@ -32,9 +22,15 @@ app.post('/submit-form', (req, res) => {
   console.log(req.body); // Print form data to the console
   res.send('Form submitted successfully!');
 });
+//////////////////////////
+const bodyParser = require('body-parser');
+
+// Use body-parser middleware to parse form data
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+///////////////////////////////////////////
 
 // Start the server
-app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
-  });
-////////
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
