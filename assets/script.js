@@ -20,7 +20,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       alert('Please fill out all the fields.');
     }
   });
-  
+  // reload
   document.querySelector('.contact-form').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevents page reload
     alert('Thank you for reaching out! I will get back to you soon.');
