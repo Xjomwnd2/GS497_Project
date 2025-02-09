@@ -21,3 +21,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
   
+  document.querySelector('.contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevents page reload
+    alert('Thank you for reaching out! I will get back to you soon.');
+});
