@@ -73,3 +73,11 @@ app.listen(PORT, () => {
 ///////////////////////////////////////////
 
 
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+app.post("/submit-form", (req, res) => {
+    res.send("Message Successfully Sent!");
+});
+//////////////////////////////////////////////////////
+
