@@ -257,6 +257,95 @@ pre {
     }
 }
 
+/* Footer Styles */
+footer {
+    background-color: #222; /* Dark background for contrast */
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Contact Section */
+#contact {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Heading */
+#contact h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Labels */
+form label {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Input Fields */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #555;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Input Focus Effect */
+input:focus, textarea:focus {
+    border-color: #3498db;
+}
+
+/* Textarea */
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* Submit Button */
+button {
+    background-color: #3498db;
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #2577b5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #contact {
+        width: 90%;
+    }
+
+    input, textarea {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}
 
 /* CSS/normalize.css */
 /*  Normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
