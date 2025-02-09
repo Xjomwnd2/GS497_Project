@@ -158,6 +158,19 @@ h1, h2, h3 {
         align-items: center;
     }
 }
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.skill-box {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
 
 /* CSS/style.css (Base Styles) */
 
