@@ -50,7 +50,6 @@ app.post('/submit-progress', (req, res) => {
   // Send a response to the client
   res.send('Progress report submitted successfully!');
 });
-
 // Handle contact form submission
 app.post('/submit-contact', (req, res) => {
   const { name, email, message } = req.body;
@@ -63,7 +62,6 @@ app.post('/submit-contact', (req, res) => {
   // Send a response to the client
   res.send('Thank you for reaching out! I will respond soon.');
 });
-
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
